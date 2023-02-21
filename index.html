@@ -16,9 +16,72 @@
 <body>
   <header>
     <!-- place navbar here -->
+    <nav class="navbar navbar-expand-lg bg-body-primary d-flex justify-content-center align-items-center">
+        <div class="container-fluid w-75 my-4 d-lg-flex justify-content-between">
+          <a class="navbar-brand w-25" href="#">Navbar scroll</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-around w-75" id="navbarScroll">
+            <form class="d-flex mx-5" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav mx-5 my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
   </header>
-  <main>
+  <main class="d-flex justify-content-center flex-column">
 
+
+    <!-- ##################################   hero   ################################ -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h1>Headphone</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia vel eius porro eveniet sequi tempora?</p>
+          <h2>$1200</h2>
+          <a href="">Buy Now <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          <img src="images/banner-images/headphone.png" class="d-block img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <h1>Mi LED TV 4A PRO 32</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia vel eius porro eveniet sequi tempora?</p>
+          <h2>$1200</h2>
+          <a href="">Buy Now <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          <img src="images/banner-images/tv.png" class="d-block img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <h1>Xbox</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia vel eius porro eveniet sequi tempora?</p>
+          <h2>$1200</h2>
+          <a href="">Buy Now <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          <img src="images/banner-images/xbox.png" class="d-block img-fluid" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </main>
   <footer>
     <!-- place footer here -->
